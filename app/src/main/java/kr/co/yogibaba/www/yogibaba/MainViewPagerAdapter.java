@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import kr.co.yogibaba.www.yogibaba.settingTab.SettinTestFragment;
 import kr.co.yogibaba.www.yogibaba.shoppingtab.ShoppingTestFragment;
+import kr.co.yogibaba.www.yogibaba.shoppingtab.ShppingTabFragment;
 import kr.co.yogibaba.www.yogibaba.videoTab.VideoListFragment;
 
 /**
@@ -19,7 +20,7 @@ public class MainViewPagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new VideoListFragment().newInstance("video1","video2");
             case 1:
-                return new ShoppingTestFragment().newInstance("second","second");
+                return new ShppingTabFragment().newInstance("second","second");
             case 2:
                 return new SettinTestFragment().newInstance("tree","tree");
             default:
